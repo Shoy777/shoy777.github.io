@@ -196,9 +196,9 @@ a:hover, a:focus{
 #header .nav-bar .container-menu ul li{
 	line-height: 2em;
 }
-#header .nav-bar .container-menu .menu li.active a,
-#header .nav-bar .container-menu ul.menu li.active a,
-#header .nav-bar .container-menu ul li.active a,
+#header .nav-bar .container-menu .menu li a.active,
+#header .nav-bar .container-menu ul.menu li a.active,
+#header .nav-bar .container-menu ul li a.active,
 #header .nav-bar .container-menu .menu li a:hover,
 #header .nav-bar .container-menu ul.menu li a:hover,
 #header .nav-bar .container-menu ul li a:hover{

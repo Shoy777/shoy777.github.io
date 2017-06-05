@@ -109,8 +109,8 @@
 			autoPlayTimeout:2000
 		});
 		
-		$("header nav li").click(function(e) {
-			$("header nav li.active").each(function() {
+		$("header nav li a").click(function(e) {
+			$("header nav li a.active").each(function() {
 				$(this).removeClass("active");	
 			});
 			$(this).addClass("active");
