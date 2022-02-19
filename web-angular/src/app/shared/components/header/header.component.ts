@@ -14,8 +14,8 @@ export class HeaderComponent implements OnInit {
   private toggleButton: any;
   private sidebarVisible: boolean;
   siteWebName = GlobalConstants.siteWebName;
-  subTitle = GlobalConstants.subTitle;
-  slogan = GlobalConstants.slogan;
+  miPerfil = GlobalConstants.miPerfil;
+  tecnologias = GlobalConstants.tecnologias;
 
   constructor(public location: Location, private element : ElementRef,
     private titleService: Title) {
