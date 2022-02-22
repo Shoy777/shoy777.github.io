@@ -1,0 +1,19 @@
+.text-title-tests{
+    font-family: "Kaushan Script", san-serif;
+    color: #33c17a;
+}
+
+.figure-img-tests{
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+    filter: blur(2px);
+}
+.figure-img-tests:hover{
+    filter: blur(0);
+    transition: 1.5s;
+    transform: scale(0.95);
+}
+.bg-blue-dark{
+    background: rgba(0, 0, 0, .15);
+}

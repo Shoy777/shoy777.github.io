@@ -1,0 +1,40 @@
+<div class="section section-separator" data-background-color="dark-1" id="projects">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col mb-2">
+                <h2 class="text-success font-weight-bold h3 text-title-project">Algunos Proyectos</h2>
+                <h3 class="font-italic font-weight-bold h5 text-initial">¡Míralos! ¿Qué tal te parecen?</h3>
+            </div>
+        </div>
+        <div class="row">
+            <ng-container *ngFor="let project of projects">
+                <ng-container *ngIf="project.name; else templateNameEmpty">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-2 bg-blue-dark rounded">
+                            <a href="{{ project.URL }}" target="_blank">
+                                <figure class="figure-img-projects">
+                                    <img src="{{ project.srcIMG }}" alt="Image" class="img-raised ">
+                                </figure>
+                            </a>
+                            <p class="mt-2 mb-1">{{ project.description || 'Sin descripción por el momento' }}</p>
+                            <a href="{{ project.URL }}" class="btn btn-default btn-round">Ver {{ project.name }}</a>
+                        </div>
+                    </div>
+                </ng-container>
+                <ng-template #templateNameEmpty>
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-none">
+                        <div class="mb-2 bg-blue-dark">
+                            <a href="{{ project.URL }}" target="_blank">
+                                <figure class="figure-img-projects">
+                                    <img src="{{ project.srcIMG }}" alt="Image" class="img-raised ">
+                                </figure>
+                            </a>
+                            <p class="mt-2 mb-1">{{ project.description || 'Seguimos trabajando' }}</p>
+                            <a href="{{ project.URL }}" class="btn btn-default btn-round">Ver {{ project.name }}</a>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </div>
+    </div>
+</div>

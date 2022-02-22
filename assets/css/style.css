@@ -1,0 +1,17 @@
+
+@media screen and (max-width: 991px){
+    .sidebar-collapse .navbar-collapse:before {
+        background: linear-gradient(rgba(0, 0, 0, .95), rgb(38, 50, 63, 1) 80%) !important;
+    }
+}
+.bg-primary{
+background-color: rgb(38, 50, 63, .75) !important;
+}
+body{
+font-family: 'Josefin Sans', sans-serif;
+}
+
+::-webkit-scrollbar, body::-webkit-scrollbar{width: 7px;}
+::-webkit-scrollbar-track, body::-webkit-scrollbar-track{background: rgba(0, 0, 0, 0.1);}
+::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb{background: rgb(38, 50, 63, 1);}
+body{scrollbar-color: rgb(38, 50, 63, 1) var(0, 0, 0, 1); scrollbar-width: thin;}

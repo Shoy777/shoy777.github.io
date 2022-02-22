@@ -1,0 +1,29 @@
+.text-title-tests{
+    font-family: "Kaushan Script", san-serif;
+    color: #33c17a;
+}
+
+.figure-img-tests{
+    width: 100%;
+}
+
+.next {
+    display: inline-block;
+    border: solid 2px rgb(38, 50, 63);
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    line-height: 1em;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 13px !important;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+.next:hover, .next:focus {
+    border-color: transparent;
+    background-color: rgb(38, 50, 63);
+    color: #fff;
+}
+button{
+    font-family: 'Josefin Sans', sans-serif !important;
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalConstants } from 'src/app/common/global-constant';
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  public siteWebName: string = GlobalConstants.siteWebName;
+  public designedBy: string = GlobalConstants.designedBy;
+  public poweredBy: string = GlobalConstants.poweredBy;
+  public av = "";
+  
   constructor() { }
 
   ngOnInit(): void {

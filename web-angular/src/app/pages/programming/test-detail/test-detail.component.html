@@ -1,0 +1,26 @@
+<div class="container-fluid bg-dark pt-5 pb-5">
+    <div class="row mt-3">
+        <div class="col-sm-12 mt-5 text-center">
+            <h1 class="text-title-tests text-center">{{ post.title }}</h1>
+            <button class="btn btn-sm next" (click)="goBack()">Regresar a las publicaciones</button>
+        </div>
+    </div>
+    <div class="row text-center">
+        <ng-container *ngIf="!isEmptyObject(post); else templateTitle">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="mb-2 bg-blue-dark rounded">
+                    <ng-container *ngIf="!imageExists(post.imgSRC)">
+                        <figure class="figure-img-tests">
+                            <img src="assets/img/posts/post.jpg" alt="Image" class="img-raised">
+                        </figure>
+                    </ng-container>
+                </div>
+            </div>
+        </ng-container>
+        <ng-template #templateTitle>
+            <div class="col-sm-12">
+                <h2 class="text-white h4">No se ha encontrado publicaciones para la ruta solicitada.</h2>
+            </div>
+        </ng-template>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="container-fluid bg-dark pt-5 pb-5">
+    <div class="row mt-3">
+        <div class="col-sm-12 mt-5">
+            <h1 class="text-title-tests text-center">Publicaciones</h1>
+            <h3 class="text-white h5 text-center mb-5">Recopilación de conceptos y preguntas sobre programación.</h3>
+        </div>
+    </div>
+    <div class="row">
+        <ng-container *ngFor="let post of posts">
+            <ng-container>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="mb-2 bg-blue-dark rounded text-center">
+                        <ng-container *ngIf="imageExists(post.srcIMG); else templateIMG">
+                            <a routerLink="/test/{{ post.id }}">
+                                <figure class="figure-img-tests">
+                                    <img src="{{ post.srcIMG }}" alt="Image" class="img-raised ">
+                                </figure>
+                            </a>
+                            <p class="mt-2 mb-1 text-white">{{ post.title || 'Sin título por el momento' }}</p>
+                            <hr>
+                            <span *ngFor="let tag of post.tags" class="badge badge-{{ tag.color }} m-1">{{ tag.name }}</span>
+                            <hr>
+                            <a routerLink="/test/{{ post.id }}" class="btn btn-default btn-round mt-0">Leer Más de {{ post.title }}</a>
+                        </ng-container>
+                        <ng-template #templateIMG>
+                            <a routerLink="/test/{{ post.id }}">
+                                <figure class="figure-img-tests">
+                                    <img src="assets/img/posts/post.jpg" alt="Image" class="img-raised ">
+                                </figure>
+                            </a>
+                            <p class="mt-2 mb-1 text-white">{{ post.title || 'Sin título por el momento' }}</p>
+                            <hr>
+                            <span *ngFor="let tag of post.tags" class="badge badge-{{ tag.color }} m-1">{{ tag.name }}</span>
+                            <hr>
+                            <a routerLink="/test/{{ post.id }}" class="btn btn-default btn-round mt-0">Leer Más de {{ post.title }}</a>
+                        </ng-template>
+                    </div>
+                </div>
+            </ng-container>
+        </ng-container>
+    </div>
+</div>

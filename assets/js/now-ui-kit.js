@@ -33,7 +33,7 @@ var nowuiKit,
 
 $(document).ready(function() {
   //  Activate the Tooltips
-  $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
+  //$('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
 
   // Activate Popovers and set color for popovers
   $('[data-toggle="popover"]').each(function() {
@@ -215,7 +215,7 @@ nowuiKit = {
 
   initSliders: function() {
     // Sliders for demo purpose in refine cards section
-    var slider = document.getElementById('sliderRegular');
+    var slider = document.getElementById('sliderRegular');/*
 
     noUiSlider.create(slider, {
       start: 40,
@@ -235,7 +235,7 @@ nowuiKit = {
         min: 0,
         max: 100
       }
-    });
+    });*/
   }
 }
 

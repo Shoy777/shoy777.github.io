@@ -1,0 +1,148 @@
+[data-background-color="dark-1"]{
+    background-color: rgb(38, 50, 63);
+}
+[data-background-color="dark-2"]{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.text-initial{
+    text-transform: initial;
+}
+.text-title-project{
+    font-family: "Kaushan Script", sans-serif;
+    color: #33c17a !important;
+}
+#about-me .img-128 {
+    height: 128px;
+    width: 128px;
+    filter: blur(1.7px);
+    border-radius: 50%;
+}
+.lp-p {
+    text-align: justify;
+    line-height: 1.7em;
+    font-size: 1.15em;
+    margin: 0.95em 0;
+}
+blockquote::before, blockquote::after {
+    font-size: 25px;
+    color: #1ab79c;
+    font-style: normal;
+    
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+}
+
+blockquote:before {
+    content: "\f10d";
+    margin-right: 10px;
+}
+blockquote:after {
+    content: "\f10e";
+    margin-left: 10px;
+}
+.card{
+    background: none !important;
+    box-shadow: none;
+}
+#about-me .card .lp-name-card {
+    font-size: 18px;
+}
+#about-me .card .lp-job-card {
+    font-size: 14px;
+}
+#about-me .card .lp-name-card, #about-me .card .lp-job-card {
+    margin: 0.75em 0;
+    color: #fff;
+}
+#about-me .card .lp-social-card {
+    list-style: none;
+    padding: 0;
+}
+#about-me .card .lp-social-card li {
+    display: inline;
+    font-size: 1.2em;
+}
+#about-me .card .lp-social-card li .icono-facebook, #about-me .card .lp-social-card li .icono-linkedin, #about-me .card .lp-social-card li .icono-vkontakte, #about-me .card .lp-social-card li .icono-github {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0.0375em 0.125em 0px rgb(0 0 0 / 15%);
+    -moz-box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0.0375em 0.125em 0px rgb(0 0 0 / 15%);
+}
+#about-me .card .lp-social-card li span {
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    transition: 2s;
+    margin-right: 10px;
+}
+#about-me .card .lp-social-card li .icono-facebook:hover {
+background-color: #265999; }
+#about-me .card .lp-social-card li .icono-linkedin:hover {
+background-color: #0082b2; }
+#about-me .card .lp-social-card li .icono-vkontakte:hover {
+background-color: #4E729A; }
+#about-me .card .lp-social-card li .icono-github:hover {
+background-color: #6e5494; }
+.next {
+    display: inline-block;
+    border: solid 2px rgb(38, 50, 63);
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    line-height: 1em;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+.next:hover, .next:focus {
+    border-color: transparent;
+    background-color: rgb(38, 50, 63);
+    color: #fff;
+}
+.scroll-down {
+    animation: pulse 2s infinite;
+    font-size: 1em;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: auto;
+    z-index: 997;
+}
+a.scroll-down {
+    text-decoration: none;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+@keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0); }
+    50% {
+      -webkit-transform: translate(0, 30px);
+      transform: translate(0, 30px); }
+    100% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0); } }
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0); }
+    50% {
+      -webkit-transform: translate(0, 30px);
+      transform: translate(0, 30px); }
+    100% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0); } }
